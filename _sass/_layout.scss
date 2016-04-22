@@ -206,6 +206,16 @@ body{
     font-size: 24px;
 }
 
+@media screen and (max-width: 700px) {
+
+    nav[role="full-horizontal"] {
+        a {
+            width: 100%;
+
+        }
+    }
+
+}
 
 
 /**
@@ -256,4 +266,38 @@ body{
 .page-message{
     margin-left:100px;
     padding-top: 20px;
+}
+
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+        float: left;
+        a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            margin-left:65px;
+            transition: 0.3s;
+            font-size: 20px;
+            color:#424242;
+        }
+        a:hover{
+            color: #0F77D8;
+        }
+        .menu-icon{
+            display:none;
+        }
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
 }

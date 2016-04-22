@@ -17,5 +17,10 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: shir_ee_sha
 github_username:  shireesha1990
 port: 8080
-# Build settings
-markdown: kramdown
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about.html
+ - title: Speaking
+   url: /speaking.html
